@@ -55,11 +55,11 @@ class Shiptheory_Shippinglabels_Model_Order_Observer
 	protected function queue($order, $data)
 	{
 
-		if(Mage::registry('sales_order_save_commit_after_executed')){
+		/*if(Mage::registry('sales_order_save_commit_after_executed')){
 			return;
 		}
 	
-		Mage::register('sales_order_save_commit_after_executed', true);
+		Mage::register('sales_order_save_commit_after_executed', true);*/
 		$order_id = $order->getId();
 		$this->_orderId = Mage::getModel('shippinglabels/history')->loadArchive($order_id);
 		
