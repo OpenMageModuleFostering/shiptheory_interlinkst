@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Shiptheory_Interlinkst>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Shiptheory_Interlinkst>
+    </modules>
+</config>
